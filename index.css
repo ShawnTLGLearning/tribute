@@ -2,3 +2,35 @@ img {
   height: 300px;
   width: 300px;
 }
+#image {
+  grid-area: main;
+  border-radius: 50%;
+}
+#img-left {
+  grid-area: left;
+  transform: rotateY(180deg);
+}
+
+#img-right {
+  grid-area: right;
+}
+h3 {
+  grid-area: text;
+}
+
+#img-div {
+  display: grid;
+  grid-template-columns: 0 1fr 1fr 1fr 0;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "margin-topL left main right margin1-topR"
+    "margin-bottomL text text text margin-bottomR";
+}
+span {
+  display: block;
+}
+#img-caption {
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+}
